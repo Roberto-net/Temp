@@ -107,5 +107,8 @@ document.getElementById("fillWater").addEventListener('click', (event) => {
 document.getElementById("fillCoffee").addEventListener('click', (event) => {
     this.coffeeMachine.fillCoffee();
 })
+document.getElementById("on-off").addEventListener('click', (event) => {
+    window.close();
+})
 
 
