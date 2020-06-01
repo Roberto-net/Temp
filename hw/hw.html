@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="hw.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Inconsolata:wght@600&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>CoffeMachine</title>
 </head>
@@ -17,41 +19,43 @@
         </div>
         <div id="controlPanel">
             <div class="buttonLeft">
-                <button class="button">Americano</button>
-                <button class="button">Espresso</button>
-                <button class="button">Double Espresso</button>
+                <button class="button" id="Americano">Americano</button>
+                <button class="button" id="Espresso">Espresso</button>
+                <button class="button" id="DoubleEspresso">Double Espresso</button>
             </div>
             <div class="centr">
                 <div id="screen">
                     <img src="">
                     <span id="msg"></span>
                 </div>
-
-                <button class="button" id="special" title="SPECIAL">
-                    SPECIAL
-                </button>
-
             </div>
 
             <div class="buttonRight">
-                <button class="button on">
+                <button class="button on" id="on-off">
                     <span class="material-icons iconStyle">
                         power_settings_new
                     </span>
                 </button>
-                <button class="button">Fill coffe tank</button>
-                <button class="button">Fill water tank</button>
+                <button class="button" id="fillCoffe">Fill coffe tank</button>
+                <button class="button" id="fillWater">Fill water tank</button>
             </div>
         </div>
         <div class="indic">
-            <div id="coffeTank"></div>
+            <div>
+                <div id="coffeTank"></div>
+                <span id="coffeTankValue"></span>
+            </div>
             <div>
                 <div class="cupHand">
                     <div id="capTank"></div>
                 </div>
                 <div class="capDish"></div>
             </div>
-            <div id="waterTank"></div>
+            <div>
+                <div id="waterTank"></div>
+                <span id="waterTankValue"></span>
+            </div>
+
         </div>
     </div>
 

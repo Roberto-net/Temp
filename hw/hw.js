@@ -1,9 +1,9 @@
+var coffeMachine;
+
 class CoffeMachine{
     coffeTank=300;
     waterTank=1000;
-    coffeMachine;
-    water=document.getElementById("water");
-    coffe=document.getElementById("coffe");
+    coffeValue=document.getElementById("coffeTankValue");
     screen = document.getElementById("msg");
     msg=``;
     start(){
@@ -11,8 +11,10 @@ class CoffeMachine{
         
     }
     test(){
-        this.water.innerText=`${this.waterTank}`;
-        this.coffe.innerText=`${this.coffeTank}`;
+        document.getElementById("waterTankValue").innerText=`${this.waterTank} ml`;
+        document.getElementById("coffeTankValue").innerText=`${this.coffeTank} gram`;
+        document.getElementById("coffeTank").style.boxShadow=`inset 0px -${(Number.parseInt(window.getComputedStyle(document.getElementById("coffeTank")).height)/300)*this.coffeTank}px 0px 0px rgb(77, 25, 25)`;
+        document.getElementById("waterTank").style.boxShadow=`inset 0px -${(Number.parseInt(window.getComputedStyle(document.getElementById("waterTank")).height)/1000)*this.waterTank}px 0px 0px rgb(49, 149, 243)`;
     }
     americano(){
         console.log(this);
@@ -39,7 +41,6 @@ class CoffeMachine{
             return;
         }
         if(this.waterTank<30){
-            
             this.screen.innerText=this.alertWater();
             return;
         }
@@ -55,8 +56,7 @@ class CoffeMachine{
             return;
         }
         if(this.waterTank<60){
-            fillmsg=this.alertWater();
-            this.screen.innerText=`${fillmsg}`;
+            this.screen.innerText=this.alertWater();
             return;
         }
         this.coffeTank-=15;
@@ -68,10 +68,12 @@ class CoffeMachine{
     fillCoffe(){
         this.coffeTank=300;
         this.screen.innerText=`Coffe tank was filled`;
+        this.test();
     }
     fillWater(){
         this.waterTank=1000;
         this.screen.innerText=`Water tank was filled`;
+        this.test();
     }
     alertCoffe(){
         return "Please fill coffe tank";
