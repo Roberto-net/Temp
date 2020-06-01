@@ -1,0 +1,231 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: silver;
+}
+
+#saecoIMG {
+    display: block;
+    height: 100px;
+    width: 230px;
+}
+
+div.button {
+    height: 30px;
+    width: 100px;
+    border: 1px solid black;
+    background: burlywood;
+    border-radius: 30px;
+}
+
+button.button {
+    font-size: 16px;
+    background: rgba(174, 227, 248, 0.521);
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 8px 12px;
+    margin: 5px;
+    min-width: 160px;
+    cursor: pointer;
+    box-shadow: inset 0 2px 2px gray;
+}
+
+button.button:hover {
+    box-shadow: 0 2px 2px blue;
+}
+
+.button.on {
+    height: 50px;
+    width: 50px;
+    padding: 2px;
+}
+
+.button:active {
+    box-shadow: 0 3px #666;
+    transform: translateY(1px);
+}
+
+.button:focus {
+    outline: none;
+}
+
+.material-icons.iconStyle {
+    font-size: 40px;
+}
+
+#screen {
+    font-family: 'Inconsolata', monospace;
+    font-size: 26px;
+    letter-spacing: 0.4em;
+    color: greenyellow;
+    display: flex;
+    height: 140px;
+    width: 330px;
+    border: 3px double blueviolet;
+    border-radius: 30px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#msg {
+    font-size: 22px;
+    align-self: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#controlPanel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#coffeeTower {
+    height: 400px;
+    width: 800px;
+    margin: -150px auto 20px auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 160px;
+    border-bottom-right-radius: 160px;
+    border: 2px double black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonLeft #button {
+    padding: 5px;
+    margin: 10px;
+}
+
+.buttonRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+#special {
+    align-self: center;
+    margin: 30px;
+    width: 144px;
+    justify-content: baseline;
+    text-align: center;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 140px;
+}
+
+#intelia {
+    font-family: 'Dancing Script', cursive;
+    display: block;
+    font-size: 33px;
+    font-style: italic;
+}
+
+#coffeeMachineModel {
+    font-family: 'Dancing Script', cursive;
+    display: block;
+    font-size: 33px;
+    font-style: italic;
+    letter-spacing: 0.5em;
+    transform: rotate(-8deg);
+    margin-bottom: 20px;
+    padding: 30px 20px 20px 20px;
+}
+
+.indic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 200px 50px 200px;
+}
+
+#capTank {
+    width: 400px;
+    height: 300px;
+    border-bottom-left-radius: 160px;
+    border-bottom-right-radius: 160px;
+    border: 1px solid black;
+    background-color: aliceblue;
+    position: absolute;
+    right: 100px;
+    box-shadow: 0px 0px 1px 2px gray;
+}
+
+.cupHand {
+    width: 200px;
+    height: 200px;
+    border-radius: 110px;
+    border: 1px solid black;
+    background-color: aliceblue;
+    position: relative;
+    margin-left: 400px;
+    margin-bottom: 100px;
+}
+
+#coffeeTank, #waterTank {
+    width: 50px;
+    height: 400px;
+    border: black 2px solid;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-top: -100px;
+    background-color: rgb(255, 255, 255);
+    transition: linear all 2s;
+}
+
+#coffeeTank {
+    background-image: url('./media/beans.jpg');
+    background-size: 180%;
+    box-shadow: inset 0px 400px 0px 0px white;
+}
+
+.capDish {
+    width: inherit;
+    height: 30px;
+    border: 1px solid black;
+    background-color: aliceblue;
+    border-bottom-left-radius: 160px;
+    border-bottom-right-radius: 160px;
+    box-shadow: /*0px 2px 0px 2px gray*/
+    inset -2px 0px 0px 4px gray;
+}
+
+#waterTankValue, #coffeeTankValue {
+    display: block;
+    min-width: 200px;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(27, 5, 148);
+    font-family: 'Inconsolata', monospace;
+}
