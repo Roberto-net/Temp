@@ -177,8 +177,13 @@ document.getElementById("fillWater").addEventListener('click', (event) => {
 document.getElementById("fillCoffee").addEventListener('click', (event) => {
     this.coffeeMachine.fillCoffee();
 })
+<<<<<<< HEAD
 document.getElementById("capTank").addEventListener('click', (event) => {
     this.coffeeMachine.drinkCoffee();
+=======
+document.getElementById("on-off").addEventListener('click', (event) => {
+    window.close();
+>>>>>>> 6a706e98a39e1a44c7de9886147dc9608c342a93
 })
 
 
