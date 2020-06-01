@@ -202,6 +202,12 @@ button.button:hover {
     transition: linear all 2s;
 }
 
+#coffeeTank {
+    background-image: url('./media/beans.jpg');
+    background-size: 180%;
+    box-shadow: inset 0px 400px 0px 0px white;
+}
+
 .capDish {
     width: inherit;
     height: 30px;
@@ -209,7 +215,8 @@ button.button:hover {
     background-color: aliceblue;
     border-bottom-left-radius: 160px;
     border-bottom-right-radius: 160px;
-    box-shadow: /*0px 2px 0px 2px gray*/ inset -2px 0px 0px 4px gray;
+    box-shadow: /*0px 2px 0px 2px gray*/
+    inset -2px 0px 0px 4px gray;
 }
 
 #waterTankValue, #coffeeTankValue {

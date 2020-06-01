@@ -16,7 +16,7 @@ class CoffeeMachine {
         const coffeeTitle = document.getElementById("coffeeTankValue");
         waterTitle.innerText = `${this.waterTank} ml`;
         coffeeTitle.innerText = `${this.coffeeTank} gram`;
-        coffeeIndicator.style.boxShadow = `inset 0px -${(Number.parseInt(window.getComputedStyle(coffeeIndicator).height) / 300) * this.coffeeTank}px 0px 0px rgb(77, 25, 25)`;
+        coffeeIndicator.style.boxShadow = `inset 0px ${(Number.parseInt(window.getComputedStyle(coffeeIndicator).height) / 300) * (300 - this.coffeeTank)}px 0px 0px rgb(255, 255, 255)`;
         waterIndicator.style.boxShadow = `inset 0px -${(Number.parseInt(window.getComputedStyle(waterIndicator).height) / 1000) * this.waterTank}px 0px 0px rgb(49, 149, 243)`;
     }
     americano() {
