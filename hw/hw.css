@@ -83,17 +83,23 @@ button.button:hover {
 }
 
 #controlPanel {
-    height: 400px;
-    width: 800px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 20px auto 20px auto;
+}
+
+#coffeeTower {
+    height: 400px;
+    width: 800px;
+    margin: -100px auto 20px auto;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 160px;
     border-bottom-right-radius: 160px;
     border: 2px double black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .buttonLeft {
@@ -143,8 +149,17 @@ button.button:hover {
     display: block;
     font-size: 33px;
     font-style: italic;
+}
+
+#coffeeMachineModel {
+    font-family: 'Dancing Script', cursive;
+    display: block;
+    font-size: 33px;
+    font-style: italic;
     letter-spacing: 0.5em;
-    transform: rotate(-10deg);
+    transform: rotate(-8deg);
+    margin-bottom: 20px;
+    padding: 30px 20px 20px 20px;
 }
 
 .indic {
@@ -163,6 +178,7 @@ button.button:hover {
     background-color: aliceblue;
     position: absolute;
     right: 100px;
+    box-shadow: 0px 0px 1px 2px gray;
 }
 
 .cupHand {
@@ -176,7 +192,7 @@ button.button:hover {
     margin-bottom: 100px;
 }
 
-#coffeTank, #waterTank {
+#coffeeTank, #waterTank {
     width: 50px;
     height: 400px;
     border: black 2px solid;
@@ -193,9 +209,10 @@ button.button:hover {
     background-color: aliceblue;
     border-bottom-left-radius: 160px;
     border-bottom-right-radius: 160px;
+    box-shadow: /*0px 2px 0px 2px gray*/ inset -2px 0px 0px 4px gray;
 }
 
-#waterTankValue, #coffeTankValue {
+#waterTankValue, #coffeeTankValue {
     display: block;
     min-width: 200px;
     padding: 15px;

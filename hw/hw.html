@@ -5,45 +5,45 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="hw.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Inconsolata:wght@600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Inconsolata&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>CoffeMachine</title>
+    <title>CoffeeMachine</title>
 </head>
 
 <body>
     <div id="main">
         <div id="logo">
             <img src="media/philips-saeco.svg" id="saecoIMG">
-            <span id="intelia">Dia biatche</span>
+            <span id="intelia">Da Vinchi series</span>
         </div>
-        <div id="controlPanel">
-            <div class="buttonLeft">
-                <button class="button" id="Americano">Americano</button>
-                <button class="button" id="Espresso">Espresso</button>
-                <button class="button" id="DoubleEspresso">Double Espresso</button>
-            </div>
-            <div class="centr">
-                <div id="screen">
-                    <img src="">
-                    <span id="msg"></span>
+        <div id="coffeeTower">
+            <span id="coffeeMachineModel">Dia biatche</span>
+            <div id="controlPanel">
+                <div class="buttonLeft">
+                    <button class="button" id="Americano">Americano</button>
+                    <button class="button" id="Espresso">Espresso</button>
+                    <button class="button" id="DoubleEspresso">Double Espresso</button>
                 </div>
-            </div>
-
-            <div class="buttonRight">
-                <button class="button on" id="on-off">
-                    <span class="material-icons iconStyle">
-                        power_settings_new
-                    </span>
-                </button>
-                <button class="button" id="fillCoffe">Fill coffe tank</button>
-                <button class="button" id="fillWater">Fill water tank</button>
+                <div class="centr">
+                    <div id="screen">
+                        <img src="">
+                        <span id="msg"></span>
+                    </div>
+                </div>
+                <div class="buttonRight">
+                    <button class="button on" id="on-off">
+                        <span class="material-icons iconStyle"> power_settings_new </span>
+                    </button>
+                    <button class="button" id="fillCoffee">Fill coffee tank</button>
+                    <button class="button" id="fillWater">Fill water tank</button>
+                </div>
             </div>
         </div>
         <div class="indic">
             <div style="display: flex; flex-direction: column; align-items: center;">
-                <div id="coffeTank"></div>
-                <span id="coffeTankValue"></span>
+                <div id="coffeeTank"></div>
+                <span id="coffeeTankValue"></span>
             </div>
             <div>
                 <div class="cupHand">
@@ -55,12 +55,8 @@
                 <div id="waterTank"></div>
                 <span id="waterTankValue"></span>
             </div>
-
         </div>
     </div>
-
-
-
     <script src="hw.js"></script>
 </body>
 
