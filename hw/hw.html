@@ -1,59 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="hw.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>CoffeMachine</title>
 </head>
+
 <body>
     <div id="main">
         <div id="logo">
             <img src="media/philips-saeco.svg" id="saecoIMG">
-            <br>
-            <span id="intelia"> Intelia</span>
-        </div> 
-    <div id="controlPanel">
-        <div class="buttonLeft">
-            <button class="button">Americano</button>
-            <button class="button">Espresso</button>
-            <button class="button">Double Espresso</button>
-           
+            <span id="intelia">Dia biatche</span>
         </div>
-        <div class="centr">
-            <div id="screen">
-                <img src="">
-                <span id="msg">Ваш кофе готов!</span>
+        <div id="controlPanel">
+            <div class="buttonLeft">
+                <button class="button">Americano</button>
+                <button class="button">Espresso</button>
+                <button class="button">Double Espresso</button>
             </div>
-    
-            <button class="button" id="special" title="SPECIAL">
-                SPECIAL
-            </button>
+            <div class="centr">
+                <div id="screen">
+                    <img src="">
+                    <span id="msg"></span>
+                </div>
+
+                <button class="button" id="special" title="SPECIAL">
+                    SPECIAL
+                </button>
 
             </div>
-       
-        <div class="buttonRight">
-            <button class="button on">
-                
-            </button>
-            <button class="button">Fill coffe tank</button>
-            <button class="button">Fill water tank</button>
+
+            <div class="buttonRight">
+                <button class="button on">
+                    <span class="material-icons iconStyle">
+                        power_settings_new
+                    </span>
+                </button>
+                <button class="button">Fill coffe tank</button>
+                <button class="button">Fill water tank</button>
+            </div>
         </div>
-
-
-
-    </div>
-    <div class="indic">
-        <div id="coffeTank"></div>
-        <div id="waterTank"></div>
-    </div>
-
-
-
-
+        <div class="indic">
+            <div id="coffeTank"></div>
+            <div>
+                <div class="cupHand"></div>
+                <div id="capTank"></div>
+            </div>
+            <div id="waterTank"></div>
+        </div>
     </div>
 
 
 
     <script src="hw.js"></script>
 </body>
+
 </html>

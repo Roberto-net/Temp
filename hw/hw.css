@@ -1,120 +1,162 @@
-#saecoIMG{
-    height: 100px ;
-    width:230px ;
+body {
+    margin: 0px;
+    padding: 0px;
 }
-div.button{
+
+#saecoIMG {
+    display: block;
+    height: 100px;
+    width: 230px;
+}
+
+div.button {
     height: 30px;
-    width: 100px ;
+    width: 100px;
     border: 1px solid black;
     background: burlywood;
     border-radius: 30px;
 }
-button.button{
+
+button.button {
+    font-size: 16px;
     background: rgba(174, 227, 248, 0.521);
-    height: 30px;
-    width: 120px ;
-    border:1px solid black;
-    border-radius: 5px;
-    
-    
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 8px 12px;
+    margin: 5px;
+    min-width: 160px;
+    cursor: pointer;
+    box-shadow: inset 0 2px 2px gray;
 }
+
+button.button:hover {
+    box-shadow: 0 2px 2px blue;
+}
+
+.button.on {
+    height: 50px;
+    width: 50px;
+    padding: 2px;
+}
+
 .button:active {
-    /*background-color: #3e8e41;*/
     box-shadow: 0 3px #666;
     transform: translateY(1px);
-  }
-#screen{
+}
+
+.material-icons.iconStyle {
+    font-size: 40px;
+}
+
+#screen {
     display: flex;
-    height: 140px ;
-    width:330px ;
+    height: 140px;
+    width: 330px;
     border: 3px double blueviolet;
     border-radius: 30px;
     margin-top: 25px;
-    margin-bottom: -62px;
+    margin-bottom: 20px;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
-#msg{
+
+#msg {
     font-size: 22px;
     align-self: center;
-    
 }
-#main{
+
+#main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background: silver;
-    height: 98%;
-    width: 99% ;
-    position: absolute;
-    
+    width: 100%;
+    height: 100%;
 }
-#controlPanel{
-    height: 400px ;
+
+#controlPanel {
+    height: 400px;
     width: 800px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-left: 250px;
-    margin-bottom: 120px;
+    margin: 20px auto 120px auto;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 160px;
+    border-bottom-right-radius: 160px;
     border: 2px double black;
-
 }
-.buttonLeft{
+
+.buttonLeft {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 140px 30px;
-    /*align-self: flex-start;*/
+    justify-content: center;
+    align-items: center;
 }
-.buttonLeft #button{
+
+.buttonLeft #button {
     padding: 5px;
     margin: 10px;
 }
-.buttonRight{
+
+.buttonRight {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /*align-self: flex-end;*/
-    padding: 140px 30px;
+    justify-content: center;
+    align-items: center;
 }
-.centr{
+
+.centr {
     display: flex;
     flex-direction: column;
-    justify-content: inherit;
+    justify-content: center;
     padding: 20px;
-    
-    
 }
-.button.on{
-    margin-left: 24px;
-    margin-top: -20px;
-    height: 50px;
-    width: 50px;
-    background-image:url(media/on_off.png);
-    /*background: no-repeat;*/
-    
-}
-#special{
+
+#special {
     align-self: center;
     margin: 30px;
     width: 144px;
     justify-content: baseline;
     text-align: center;
-    
 }
-#logo{
+
+#logo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 50px 140px;
 }
-#intelia{
-    align-self: flex-end;
-    margin-left: -10px;
-    margin-right: 150px;
+
+#intelia {
+    font-family: 'Dancing Script', cursive;
+    display: block;
     font-size: 33px;
     font-style: italic;
+    letter-spacing: 0.5em;
+    transform: rotate(-10deg);
+}
+
+.indic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+#capTank{
+    width: 400px;
+    height: 300px;
+    border-bottom-left-radius: 160px;
+    border-bottom-right-radius: 160px;
+    border: 1px solid black;
+    background-color: aliceblue;
+}
+
+.cupHand{
+    width: 200px;
+    height: 200px;
+
 }
